@@ -16,7 +16,9 @@ pipeline {
             }
        }
        stage("test"){
-           
+           when {
+        branch 'myBranch'
+            }
          steps
             {
                 sh 'mvn clean test'
