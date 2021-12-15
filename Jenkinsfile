@@ -17,7 +17,7 @@ pipeline {
        }
        stage("test"){
            when {
-        branch 'myBranch'
+        branch 'test'
             }
          steps
             {
